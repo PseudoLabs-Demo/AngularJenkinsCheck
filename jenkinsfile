@@ -7,7 +7,7 @@ pipeline {
         stage('init') {
             steps {
                 sh 'ls -ltr'
-                sh 'npm install'
+                sh 'cd angular-tour-of-heroes && npm install'
             }
         }
         stage('build') {
